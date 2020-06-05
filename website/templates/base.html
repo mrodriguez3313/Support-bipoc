@@ -13,7 +13,6 @@
 </head>
 <body>
  <!--Addition that needs to be looked at-->
-  <!--ANOTHER MESSAGE. Change your navbar setting in style.css because it is messing with mine-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="{{url_for('core.index')}}">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,12 +31,13 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+          States
         </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="{{url_for('core.Texas')}}">Texas</a>
-            <a class="dropdown-item" href="#">California</a>
-            <a class="dropdown-item" href="#">Minnesota</a>
+            <!-- <a class="dropdown-item" href="{{url_for('core.Texas')}}">Texas</a> -->
+            {% for state in states %}
+              <a class="dropdown-item" href="/{{state}}">{{ state }}</a>
+            {% endfor %}
             </div>
       </li>
     </ul>
