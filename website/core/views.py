@@ -1,5 +1,12 @@
 from flask import render_template, Blueprint
 core = Blueprint('core', __name__)
+states_array=["California", "Texas", "Minnesota", "New York"]
+
+
+dict = {
+"cali_title" : "California",
+"cali_Content" :  "This is where Cali links and content will go."
+}
 
 @core.route('/')
 def index():
@@ -34,7 +41,7 @@ def Tex_biz():
 
 @core.route('/California')
 def Cali():
-    return render_template('Cali.html')
+    return render_template('Cali.html', title=dict["cali_title"], cali_Content=dict["cali_Content"], states=states_array)
 
 @core.route('/California/donate')
 def Cali_donate():
