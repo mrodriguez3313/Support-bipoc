@@ -80,3 +80,31 @@ min-height: 100vh;
 .show {
   display: block;
 }
+
+.main {
+    text-align: center;
+    width: 90%;
+    opacity: 0;
+    display: none;
+    transition: opacity 2s ease-in;
+}
+
+.main h1 {
+    font-size: 50px;
+}
+
+.main p {
+    font-size: 25px;
+}
+
+.button {
+    background-color: #042f66;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: 2px solid #1c100b;
+}
