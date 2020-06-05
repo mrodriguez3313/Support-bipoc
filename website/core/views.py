@@ -1,16 +1,16 @@
 from flask import render_template, Blueprint
 core = Blueprint('core', __name__)
-states_array=["California", "Texas", "Minnesota", "New York"]
-
+states_array=["California", "Texas", "Minnesota"]
 
 dict = {
-"cali_title" : "California",
-"cali_Content" :  "This is where Cali links and content will go."
+    "cali_Content" :  "This is where Cali links and content will go.",
+    "texas_Content" : "This is where Texas links and content will go.",
+    "minn_Content" : "This is where Minnesota links and content will go."
 }
 
 @core.route('/')
 def index():
-    return render_template("index.html")
+    return render_template("index.html", states=states_array)
 
 @core.route('/NationalDonate')
 def donate():
@@ -21,11 +21,10 @@ def organize():
     return render_template('organize.html')
 
 # probably do a for loop here to fill in for all states if needed.
-# create an array that contains all state names
 
 @core.route('/Texas')
 def Texas():
-    return render_template('Texas.html')
+    return render_template('Texas.html', title="Texas", Content=dict["texas_Content"])
 
 @core.route('/Texas/donate')
 def Texas_donate():
@@ -41,7 +40,7 @@ def Tex_biz():
 
 @core.route('/California')
 def Cali():
-    return render_template('Cali.html', title=dict["cali_title"], cali_Content=dict["cali_Content"], states=states_array)
+    return render_template('Cali.html', title="California", Content=dict["cali_Content"])
 
 @core.route('/California/donate')
 def Cali_donate():
@@ -57,7 +56,7 @@ def Cali_biz():
 
 @core.route('/Minnesota')
 def MN():
-    return render_template('Minnesota.html')
+    return render_template('Minnesota.html', title="Minnesota", Content=dict["minn_Content"])
 
 @core.route('/Minnesota/donate')
 def MN_donate():
