@@ -11,19 +11,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Want to help?</title>
 </head>
-<body class="body">
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{{url_for('core.index')}}">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="{{url_for('core.Texas')}}">Texas</a>
+            <a class="dropdown-item" href="#">California</a>
+            <a class="dropdown-item" href="#">Minnesota</a>
+            </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="body">
     <div class="loader">Loading</div>
-        <section class = "main">
-            <h1>Black Lives Matter</h1>
-            <p>
+            <section class = "main">
+                <h1>Black Lives Matter</h1>
+                <p>
                 Check the links above to find info regarding your state to find local organizations,
                 places to donate to, and a list of black businesses to support!
                 Also, click the button below to head over to the Campaign Zero site to read on
                 the police reform campaign to reduce police violence!
-            </p>
-            <a href="https://www.joincampaignzero.org/" class ='button'>Campaign Zero</a>
-        </section>
-    <script src = '/static/main.js'></script>
+                </p>
+                <a href="https://www.joincampaignzero.org/" class ='button'>Campaign Zero</a>
+            </section>
+        </div>
+        <script src = '/static/main.js'></script>
 {% block content %}
 {% endblock %}
 </body>
