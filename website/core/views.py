@@ -20,6 +20,10 @@ def donate():
 def organize():
     return render_template('organize.html')
 
+@core.route('/CampaignZero')
+def zero():
+    return render_template('campaign.html')
+
 # probably do a for loop here to fill in for all states if needed.
 
 @core.route('/Texas')

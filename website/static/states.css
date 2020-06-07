@@ -1,0 +1,16 @@
+@font-face {font-family: Cornerstone; src: url('Cornerstone.ttf');}
+
+.blmstyle {
+    font-family: 'Cornerstone', sans-serif;
+    color: #000000;
+}
+
+.lowernav {
+    position: relative;
+    text-align: center;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
