@@ -20,11 +20,15 @@ def donate():
 def organize():
     return render_template('organize.html')
 
+@core.route('/CampaignZero')
+def zero():
+    return render_template('campaign.html')
+
 # probably do a for loop here to fill in for all states if needed.
 
 @core.route('/Texas')
 def Texas():
-    return render_template('Texas.html', title="Texas", Content=dict["texas_Content"])
+    return render_template('Texas.html', title="Texas", Content=dict["texas_Content"], states=states_array)
 
 @core.route('/Texas/donate')
 def Texas_donate():

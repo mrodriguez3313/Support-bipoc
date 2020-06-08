@@ -1,0 +1,21 @@
+@font-face {font-family: Cornerstone; src: url('Cornerstone.ttf');}
+
+.blmstyle {
+    font-family: 'Cornerstone', sans-serif;
+    color: #000000;
+}
+
+.foot-position {
+  position: relative;
+}
+
+.container-pos{
+  display: block;
+  position: absolute;
+  padding-top: 1rem;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
