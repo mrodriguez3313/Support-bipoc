@@ -5,9 +5,14 @@
     color: #000000;
 }
 
-.lowernav {
-    position: relative;
-    text-align: center;
+.foot-position {
+  position: relative;
+}
+
+.container-pos{
+  display: block;
+  position: absolute;
+  padding-top: 1rem;
 }
 
 html {

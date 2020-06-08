@@ -28,7 +28,7 @@ def zero():
 
 @core.route('/Texas')
 def Texas():
-    return render_template('Texas.html', title="Texas", Content=dict["texas_Content"])
+    return render_template('Texas.html', title="Texas", Content=dict["texas_Content"], states=states_array)
 
 @core.route('/Texas/donate')
 def Texas_donate():
