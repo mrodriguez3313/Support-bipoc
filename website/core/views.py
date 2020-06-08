@@ -24,8 +24,6 @@ def organize():
 def zero():
     return render_template('campaign.html')
 
-# probably do a for loop here to fill in for all states if needed.
-
 @core.route('/Texas')
 def Texas():
     return render_template('Texas.html', title="Texas", Content=dict["texas_Content"], states=states_array, donation_page=("Donation Pages TX", "Texas_donate.html"), state_orgs=("Organizations TX", "Texas_org.html"), state_black_businesses=("Black Businesses TX", "Texasbiz.html") )
