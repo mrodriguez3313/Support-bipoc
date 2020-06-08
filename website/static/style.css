@@ -1,4 +1,6 @@
 @font-face {font-family: Cornerstone; src: url('Cornerstone.ttf');}
+@font-face {font-family: QanelasSoft; src: url('QanelasSoftDEMO-UltraLight.otf')}
+@font-face {font-family: QanelasBold; src: url('QanelasSoftDEMO-ExtraBold.otf')}
 
 *{
 box-sizing: border-box;
@@ -44,4 +46,9 @@ min-height: 100vh;
     padding: 15px 25px;
     border-radius: 12px;
     border: 2px solid #1c100b;
+}
+
+.barstyle {
+    font-family: 'QanelasSoft', Cornerstone;
+    color: #000000;
 }
