@@ -1,9 +1,30 @@
-{% extends 'base_state.html' %}
-{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+
+<div class="navbar-cali">
+  <a href="/">BLM</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">States
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+  {% for state in states %}
+    <a href="/{{state}}">{{state}}</a>
+  {% endfor %}
+  </div>
+  </div>
+</div>
 
 <h1>{{title}}</h1>
+<p>{{Content}}</p>
 
-
-
-
-{% endblock %}
+</body>
+</html>
