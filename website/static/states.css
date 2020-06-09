@@ -15,17 +15,27 @@
 
 .foot-position {
   position: relative;
+  bottom: 0;
+
 }
 
 .container-pos{
   display: block;
   position: absolute;
-  padding-top: 1rem;
+  padding-top: 2rem;
+}
+
+html, body {
+    height: 100%;
 }
 
 html {
     position: relative;
     min-height: 100%;
+}
+
+body {
+   margin-bottom: 5em;
 }
 
 .background {
