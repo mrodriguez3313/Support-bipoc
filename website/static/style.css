@@ -52,3 +52,9 @@ min-height: 100vh;
     font-family: 'QanelasSoft', Cornerstone;
     color: #000000;
 }
+
+.container-pos{
+  display: block;
+  position: absolute;
+  padding-top: 1rem;
+}
