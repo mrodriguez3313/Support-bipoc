@@ -14,17 +14,19 @@ def index():
 
 @core.route('/NationalDonate')
 def donate():
-    return render_template('donate.html')
+    return render_template('donate.html', title="Donate")
 
 @core.route('/NationalOrganizations')
 def organize():
     return render_template('organize.html')
 
+@core.route('/NationalPetitions')
+def petitions():
+    return render_template('petitions.html', title="National Petitions")
+
 @core.route('/CampaignZero')
 def zero():
     return render_template('campaign.html')
-
-# probably do a for loop here to fill in for all states if needed.
 
 @core.route('/Texas')
 def Texas():
