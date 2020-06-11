@@ -1,11 +1,22 @@
-@font-face {font-family: Cornerstone; src: url('Cornerstone.ttf');}
-@font-face {font-family: QanelasSoft; src: url('QanelasSoftDEMO-UltraLight.otf')}
-@font-face {font-family: QanelasBold; src: url('QanelasSoftDEMO-ExtraBold.otf')}
+@font-face {
+  font-family: Cornerstone;
+  src: url('Cornerstone.ttf');
+}
 
-*{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+@font-face {
+  font-family: QanelasSoft;
+  src: url('QanelasSoftDEMO-UltraLight.otf')
+}
+
+@font-face {
+  font-family: QanelasBold;
+  src: url('QanelasSoftDEMO-ExtraBold.otf')
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -53,14 +64,13 @@ html {
   color: #000000;
 }
 
-
 .foot-position {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-    overflow: hidden;
-    padding-top: 2rem;
-    padding-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 20px;
 }
 
 /* This class is the same as 'main' from states.css */
@@ -76,11 +86,11 @@ html {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -92,16 +102,44 @@ html {
   height: 32rem;
   background-color: #777;
 }
-.carousel-item > img {
+
+.carousel-item>img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
   height: 32rem;
 }
+
 /* -------------------------- */
-
-
-.jumbotron-orgs {
-  /* background-image: url("/static/images/weneedchange.jpg") */
+/* National Orgs styling */
+.jumboimg {
+  background-image: url("/static/images/monochrome-photo-of-resist-signage-3141240.jpg");
+  background-size: 100% 100%;
+  background-attachment: scroll;
 }
+
+@media (max-width: 500px) {
+  .mobilev {
+    padding: 0 0;
+  }
+}
+
+.space:after {
+  clear: both;
+  display: block;
+  content: "";
+  background-color: #e9ecef;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div.a {
+  display: block;
+  padding: 5px;
+  border: 1px solid grey;
+}
+
+/* ---------------------------- */
