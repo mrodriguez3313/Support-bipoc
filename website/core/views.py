@@ -46,7 +46,7 @@ def Tex_biz():
 
 @core.route('/California')
 def Cali():
-    return render_template('Cali.html', title="California", Content=dict["cali_Content"], states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA","core.Calibiz") )
+    return render_template('Cali.html', title="California", Content=dict["cali_Content"], states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA","core.Cali_biz") )
 
 @core.route('/California/donate')
 def Cali_donate():
