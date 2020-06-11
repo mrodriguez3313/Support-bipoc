@@ -17,9 +17,14 @@ html{
     color: #000000;
 }
 
+.title_blm {
+    font-family: 'QanelasBold', sans-serif;
+    color: #000000;
+}
+
 .foot-position {
 	position: absolute;
-	bottom: auto;
+	bottom: 0;
 	width: 100%;
     overflow: hidden;
     padding-top: 2rem;
