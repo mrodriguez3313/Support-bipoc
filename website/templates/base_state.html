@@ -43,17 +43,17 @@
                 {% for state in states %}
                 <a class="dropdown-item" href="/{{state}}">{{ state }}</a>
                 {% endfor %}
-              </div>
             </li>
             <li class='nav-link'>
-              <a href="/{{donation_page[1]}}">{{donation_page[0]}}</a>
+              <a href="{{url_for(donation_page[1])}}">{{donation_page[0]}}</a>
             </li>
             <li class='nav-link'>
-              <a href="/{{state_orgs[1]}}">{{state_orgs[0]}}</a>
+              <a href="{{url_for(state_orgs[1])}}">{{state_orgs[0]}}</a>
             </li>
             <li class='nav-link'>
-              <a href="/{{state_black_businesses[1]}}">{{state_black_businesses[0]}}</a>
+              <a href="{{url_for(state_black_businesses[1])}}">{{state_black_businesses[0]}}</a>
             </li>
+
           </ul>
         </div>
       </nav>

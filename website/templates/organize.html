@@ -1,11 +1,19 @@
 {% extends 'base.html' %}
 <!DOCTYPE html>
+{% block content %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{title}}</title>
-</head>
-<body>
-
-</body>
+  <head>
+      <meta charset="UTF-8">
+      <title>{{title}}</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid jumbotron-orgs">
+      <div class="container">
+        <img src="/static/images/weneedchange.jpg" alt="we need change.t">
+        <h1 class="display-4">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+  </body>
 </html>
+{% endblock%}
