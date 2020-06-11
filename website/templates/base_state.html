@@ -44,6 +44,39 @@
                 <a class="dropdown-item" href="/{{state}}">{{ state }}</a>
                 {% endfor %}
               </div>
+            {% if title == "Texas" %}
+              </li>
+            <li class='nav-link'>
+              <a href="{{url_for('core.Texas_donate')}}">{{donation_page[0]}}</a>
+            </li>
+            <li class='nav-link'>
+              <a href="{{url_for('core.Texas_org')}}">{{state_orgs[0]}}</a>
+            </li>
+            <li class='nav-link'>
+              <a href="{{url_for('core.Tex_biz')}}">{{state_black_businesses[0]}}</a>
+            </li>
+            {% elif title == "California" %}
+            <li class='nav-link'>
+              <a href="{{url_for('core.Cali_donate')}}">{{donation_page[0]}}</a>
+            </li>
+            <li class='nav-link'>
+              <a href="{{url_for('core.Cali_org')}}">{{state_orgs[0]}}</a>
+            </li>
+            <li class='nav-link'>
+              <a href="{{url_for('core.Cali_biz')}}">{{state_black_businesses[0]}}</a>
+            </li>
+            {% elif title == "Minnesota" %}
+            <li class='nav-link'>
+              <a href="{{url_for('core.MN_donate')}}">{{donation_page[0]}}</a>
+            </li>
+            <li class='nav-link'>
+              <a href="{{url_for('core.MN_org')}}">{{state_orgs[0]}}</a>
+            </li>
+            <li class='nav-link'>
+              <a href="{{url_for('core.MN_biz')}}">{{state_black_businesses[0]}}</a>
+            </li>
+            {% endif %}
+            <!---
             </li>
             <li class='nav-link'>
               <a href="/{{donation_page[1]}}">{{donation_page[0]}}</a>
@@ -54,6 +87,7 @@
             <li class='nav-link'>
               <a href="/{{state_black_businesses[1]}}">{{state_black_businesses[0]}}</a>
             </li>
+            --->
           </ul>
         </div>
       </nav>
