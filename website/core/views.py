@@ -2,19 +2,30 @@ from flask import render_template, Blueprint
 core = Blueprint('core', __name__)
 states_a = ["California", "Texas", "Minnesota"]
 states_array = sorted(states_a)
+
+
+class LinkObject:
+    def __init__(self, name, link, description):
+        self.name = name
+        self.link = link
+        self.description = description
+
+
 National_orgs_array = [
-    "American Civil Liberties Union",
-    "Black Lives Matter Global Network",
-    "Reclaim The Block",
-    "Color of Change Education Fund",
-    "Advancement Project",
-    "Moms Demand Action",
-    "Black Visions Collective based in Minnesota",
-    "Faith in Texas",
-    "Take Action Chapel Hill based in Chapel Hill, North Carolina",
-    "Austin Justice Coalition based in Austin, Texas",
-    "Dallas Alliance Against Racial and Political Repression based in Dallas, Texas",
-    "Pull Up or Shut Up"
+    ("American Civil Liberties Union",
+     "https://www.aclu.org/issues/racial-justice", "ACLU today is the nation's largest non-profit and non-partisan law firm who select lawsuits that will have the greatest impact for breaking new ground and establishing new precedents that will strengthen American freedoms."),
+    ("Black Lives Matter",
+     "https://blacklivesmatter.com/", "Founded in response to the aquittal of Trayvon Martin's murderer. BLM's mission is to eradicate white supremacy and build local power to intervene in violence inflicted Black communities by the state and vigilantes."),
+    ("Reclaim The Block", "https://www.reclaimtheblock.org/home", ""),
+    ("Color of Change", "https://colorofchange.org/", ""),
+    ("Advancement Project", "https://advancementproject.org/", ""),
+    ("Moms Demand Action", "https://momsdemandaction.org/", ""),
+    ("Black Visions Collective", "https://www.blackvisionsmn.org/", ""),
+    ("Faith in Texas", "https://faithintx.org/", ""),
+    ("Take Action Chapel Hill", "https://www.takeactionch.com/", ""),
+    ("Austin Justice Coalition", "https://austinjustice.org/", ""),
+    ("Dallas Alliance Against Racial and Political Repression",
+     "https://dfwalliance.org/", "")
 ]
 
 
