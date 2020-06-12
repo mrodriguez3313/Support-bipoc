@@ -18,11 +18,11 @@ html {
 }
 
 a {
-  color: #000000;
+  color: #000000 !important;
 }
 
 a:hover {
-  color: #B46E43;
+  color: #B46E43 !important;
 }
 
 .blmstyle {
