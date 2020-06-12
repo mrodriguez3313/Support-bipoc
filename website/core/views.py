@@ -4,13 +4,6 @@ states_a = ["California", "Texas", "Minnesota"]
 states_array = sorted(states_a)
 
 
-class LinkObject:
-    def __init__(self, name, link, description):
-        self.name = name
-        self.link = link
-        self.description = description
-
-
 National_orgs_array = [
     ("American Civil Liberties Union",
      "https://www.aclu.org/issues/racial-justice", "ACLU today is the nation's largest non-profit and non-partisan law firm who select lawsuits that will have the greatest impact for breaking new ground and establishing new precedents that will strengthen American freedoms."),
