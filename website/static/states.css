@@ -1,36 +1,53 @@
-@font-face {font-family: Cornerstone; src: url('Cornerstone.ttf');}
-@font-face {font-family: QanelasSoft; src: url('QanelasSoftDEMO-UltraLight.otf')}
-@font-face {font-family: QanelasBold; src: url('QanelasSoftDEMO-ExtraBold.otf')}
+@font-face {
+  font-family: Cornerstone;
+  src: url('Cornerstone.ttf');
+}
 
+@font-face {
+  font-family: QanelasSoft;
+  src: url('QanelasSoftDEMO-UltraLight.otf')
+}
 
-html{
+@font-face {
+  font-family: QanelasBold;
+  src: url('QanelasSoftDEMO-ExtraBold.otf')
+}
+
+html {
   position: relative;
 }
 
+a {
+  color: #000000 !important;
+}
+
+a:hover {
+  color: #B46E43 !important;
+}
+
 .blmstyle {
-    font-family: 'Cornerstone', sans-serif;
-    color: #000000;
+  font-family: 'Cornerstone', sans-serif;
+  color: #000000;
 }
 
 .barstyle {
-    font-family: 'QanelasSoft', Cornerstone;
-    color: #000000;
+  font-family: 'QanelasSoft', Cornerstone;
+  color: #000000;
 }
 
 .title_blm {
-    font-family: 'QanelasBold', sans-serif;
-    color: #000000;
+  font-family: 'QanelasBold', sans-serif;
+  color: #000000;
 }
 
 .foot-position {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-    overflow: hidden;
-    padding-top: 2rem;
-    padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 20px;
 }
-
 
 .main {
   position: relative;
@@ -39,5 +56,5 @@ html{
 }
 
 .background {
-    background-image: linear-gradient(135deg, #e9ecef 0%, #e9ecef 100%);
+  background-image: linear-gradient(135deg, #e9ecef 0%, #e9ecef 100%);
 }
