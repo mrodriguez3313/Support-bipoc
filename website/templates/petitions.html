@@ -1,10 +1,47 @@
+{% extends 'base.html' %}
 <!DOCTYPE html>
+{% block content %}
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <title>{{title}}</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+</head>
+
+<body>
+  <div class="container mobilev">
+    <div class="jumbotron d-flex jumbopetitionimg ">
+      <div class="container" style="height:300px;">
+
+      </div>
+    </div>
+  </div>
+  <div class="container mobilev">
+    <div class="jumbotron d-flex">
+      <div class="container">
+        <h1>People are making their voice heard. Help make their voice louder!</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <ul class="list-group">
+      {% for org in orgs %}
+      <li>
+        <a href="{{org[1]}}" class="list-group-item list-group-item-action align-items-start space">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{org[0]}}</h5>
+          </div>
+          <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <!--{{org[2]}}-->
+          </p>
+        </a>
+        <br>
+        {% endfor %}
+        <br>
+      </li>
+    </ul>
+  </div>
+</body>
+
 </html>
+{% endblock%}

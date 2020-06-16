@@ -141,3 +141,15 @@ div.a {
   padding: 5px;
   border: 1px solid grey;
 }
+
+.jumbodonateimg {
+  background-image: url("/static/images/kat-yukawa-K0E6E0a0R3A-unsplash.jpg");
+  background-size: 100% 100%;
+  background-attachment: scroll;
+}
+
+.jumbopetitionimg {
+  background-image: url("/static/images/clay-banks-gr0wnD7PbJk-unsplash.jpg");
+  background-size: 100% 100%;
+  background-attachment: scroll;
+}
