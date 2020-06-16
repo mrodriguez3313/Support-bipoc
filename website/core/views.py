@@ -4,22 +4,7 @@ states_a = ["California", "Texas", "Minnesota"]
 states_array = sorted(states_a)
 
 
-National_orgs_array = [
-    ("American Civil Liberties Union",
-     "https://www.aclu.org/issues/racial-justice", "ACLU today is the nation's largest non-profit and non-partisan law firm who select lawsuits that will have the greatest impact for breaking new ground and establishing new precedents that will strengthen American freedoms."),
-    ("Black Lives Matter",
-     "https://blacklivesmatter.com/", "Founded in response to the aquittal of Trayvon Martin's murderer. BLM's mission is to eradicate white supremacy and build local power to intervene in violence inflicted Black communities by the state and vigilantes."),
-    ("Reclaim The Block", "https://www.reclaimtheblock.org/home", ""),
-    ("Color of Change", "https://colorofchange.org/", ""),
-    ("Advancement Project", "https://advancementproject.org/", ""),
-    ("Moms Demand Action", "https://momsdemandaction.org/", ""),
-    ("Black Visions Collective", "https://www.blackvisionsmn.org/", ""),
-    ("Faith in Texas", "https://faithintx.org/", ""),
-    ("Take Action Chapel Hill", "https://www.takeactionch.com/", ""),
-    ("Austin Justice Coalition", "https://austinjustice.org/", ""),
-    ("Dallas Alliance Against Racial and Political Repression",
-     "https://dfwalliance.org/", "")
-]
+National_orgs_array = []
 
 
 @core.route('/')
