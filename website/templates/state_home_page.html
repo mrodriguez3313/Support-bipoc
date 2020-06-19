@@ -12,7 +12,7 @@
       <h5 class="card-title">Donate to Help and Save Lives</h5>
       <p class="card-text">We have compiled a list of reputable sources and places to donate. This may include: our fallen brothers and sisters due to police brutality, GoFundMe's for bail bonds, and more. It is recommended that you direct your funds
         to charities or GoFundMe's that have yet to complete their funding goal.</p>
-      <a href="{{url_for('core.Cali_donate')}}" class="card-link cardlink">Donate in {{title}} <i class="fas fa-arrow-right"></i></a>
+      <a href="{{url_for(donation_page[1])}}" class="card-link cardlink">Donate in {{title}} <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
   <div class="card ml-4 mr-4 mb-3 h-100 fade-in two" style="width: 21rem; top: 20px">
@@ -21,7 +21,7 @@
       <h5 class="card-title">Make Your Voice Heard!</h5>
       <p class="card-text">The strongest way to make honest change is to actively join the fight! You will find a list of {{title}} organizations fighting for Black and African-American rights. These may include {{title}} chapters of national
         organizations, other non-profits, bail-bond companies, and more.</p>
-      <a href="{{url_for('core.Cali_org')}}" class="card-link cardlink">BLM Organizations in {{title}} <i class="fas fa-arrow-right"></i></a>
+      <a href="{{url_for(state_orgs[1])}}" class="card-link cardlink">BLM Organizations in {{title}} <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
   <div class="card ml-4 mr-4 mb-3 h-100 fade-in three" style="width: 21rem; top: 20px">
@@ -30,7 +30,7 @@
       <h5 class="card-title">Support Black-Owned Businesses</h5>
       <p class="card-text">No restaurant or company have more passion and drive for success than those in this list of businesses we have compiled for you. To show your support and to look out for before, during, and after protests check these places
         out.</p>
-      <a href="{{url_for('core.Cali_biz')}}" class="card-link cardlink">Black-Owned Businesses in {{title}} <i class="fas fa-arrow-right"></i></a>
+      <a href="{{url_for(state_black_businesses[1])}}" class="card-link cardlink">Black-Owned Businesses in {{title}} <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
 
