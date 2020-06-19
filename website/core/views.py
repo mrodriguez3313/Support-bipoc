@@ -34,7 +34,7 @@ def zero():
 
 @core.route('/Texas')
 def Texas():
-    return render_template('state_home_page.html.html', title="Texas", states=states_array, donation_page=("Donation Pages TX", "core.Texas_donate"), state_orgs=("Organizations TX", "core.Texas_org"), state_black_businesses=("Black Businesses TX", "core.Tex_biz"))
+    return render_template('state_home_page.html', title="Texas", states=states_array, donation_page=("Donation Pages TX", "core.Texas_donate"), state_orgs=("Organizations TX", "core.Texas_org"), state_black_businesses=("Black Businesses TX", "core.Tex_biz"))
 
 
 @core.route('/Texas/donate')
@@ -54,7 +54,7 @@ def Tex_biz():
 
 @core.route('/California')
 def Cali():
-    return render_template('state_home_page.html.html', title="California", states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA", "core.Cali_biz"))
+    return render_template('state_home_page.html', title="California", states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA", "core.Cali_biz"))
 
 
 @core.route('/California/donate')
@@ -74,7 +74,7 @@ def Cali_biz():
 
 @core.route('/Minnesota')
 def MN():
-    return render_template('state_home_page.html.html', title="Minnesota", states=states_array, donation_page=("Donation Pages MN", "core.MN_donate"), state_orgs=("Organizations MN", "core.MN_org"), state_black_businesses=("Black Businesses MN", "core.MN_biz"))
+    return render_template('state_home_page.html', title="Minnesota", states=states_array, donation_page=("Donation Pages MN", "core.MN_donate"), state_orgs=("Organizations MN", "core.MN_org"), state_black_businesses=("Black Businesses MN", "core.MN_biz"))
 
 
 @core.route('/Minnesota/donate')
