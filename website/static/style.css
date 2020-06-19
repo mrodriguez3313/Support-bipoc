@@ -76,7 +76,7 @@ html {
 /* This class is the same as 'main' from states.css */
 .body-fix {
   position: relative;
-  min-height: 100vh;
+  min-height: 110vh;
   padding-bottom: 18rem;
 }
 
