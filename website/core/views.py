@@ -34,59 +34,59 @@ def zero():
 
 @core.route('/Texas')
 def Texas():
-    return render_template('Texas.html', title="Texas", states=states_array, donation_page=("Donation Pages TX", "core.Texas_donate"), state_orgs=("Organizations TX", "core.Texas_org"), state_black_businesses=("Black Businesses TX", "core.Tex_biz"))
+    return render_template('state_home_page.html', title="Texas", states=states_array, donation_page=("Donation Pages TX", "core.Texas_donate"), state_orgs=("Organizations TX", "core.Texas_org"), state_black_businesses=("Black Businesses TX", "core.Tex_biz"))
 
 
 @core.route('/Texas/donate')
 def Texas_donate():
-    return render_template('Texas_donate.html', title="Texas", states=states_array, donation_page=("Donation Pages TX", "core.Texas_donate"), state_orgs=("Organizations TX", "core.Texas_org"), state_black_businesses=("Black Business TX", "core.Tex_biz"))
+    return render_template('state_donate.html', title="Texas", states=states_array, donation_page=("Donation Pages TX", "core.Texas_donate"), state_orgs=("Organizations TX", "core.Texas_org"), state_black_businesses=("Black Business TX", "core.Tex_biz"))
 
 
 @core.route('/Texas/organizations')
 def Texas_org():
-    return render_template('Texas_org.html', title="Texas", states=states_array, donation_page=("Donation Pages TX", "core.Texas_donate"), state_orgs=("Organizations TX", "core.Texas_org"), state_black_businesses=("Black Business TX", "core.Tex_biz"))
+    return render_template('state_org.html', title="Texas", states=states_array, donation_page=("Donation Pages TX", "core.Texas_donate"), state_orgs=("Organizations TX", "core.Texas_org"), state_black_businesses=("Black Business TX", "core.Tex_biz"))
 
 
 @core.route('/Texas/BlackBusiness')
 def Tex_biz():
-    return render_template('Texbiz.html', title="Texas", states=states_array, donation_page=("Donation Pages TX", "core.Texas_donate"), state_orgs=("Organizations TX", "core.Texas_org"), state_black_businesses=("Black Business TX", "core.Tex_biz"))
+    return render_template('state_biz.html', title="Texas", states=states_array, donation_page=("Donation Pages TX", "core.Texas_donate"), state_orgs=("Organizations TX", "core.Texas_org"), state_black_businesses=("Black Business TX", "core.Tex_biz"))
 
 
 @core.route('/California')
 def Cali():
-    return render_template('Cali.html', title="California", states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA", "core.Cali_biz"))
+    return render_template('state_home_page.html', title="California", states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA", "core.Cali_biz"))
 
 
 @core.route('/California/donate')
 def Cali_donate():
-    return render_template('Cali_donate.html', title="California", states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA", "core.Cali_biz"))
+    return render_template('state_donate.html', title="California", states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA", "core.Cali_biz"))
 
 
 @core.route('/California/organizations')
 def Cali_org():
-    return render_template('Cali_org.html', title="California", states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA", "core.Cali_biz"))
+    return render_template('state_org.html', title="California", states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA", "core.Cali_biz"))
 
 
 @core.route('/California/BlackBusiness')
 def Cali_biz():
-    return render_template('Calibiz.html', title="California", states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA", "core.Cali_biz"))
+    return render_template('state_biz.html', title="California", states=states_array, donation_page=("Donation Pages CA", "core.Cali_donate"), state_orgs=("Organizations CA", "core.Cali_org"), state_black_businesses=("Black Businesses CA", "core.Cali_biz"))
 
 
 @core.route('/Minnesota')
 def MN():
-    return render_template('Minnesota.html', title="Minnesota", states=states_array, donation_page=("Donation Pages MN", "core.MN_donate"), state_orgs=("Organizations MN", "core.MN_org"), state_black_businesses=("Black Businesses MN", "core.MN_biz"))
+    return render_template('state_home_page.html', title="Minnesota", states=states_array, donation_page=("Donation Pages MN", "core.MN_donate"), state_orgs=("Organizations MN", "core.MN_org"), state_black_businesses=("Black Businesses MN", "core.MN_biz"))
 
 
 @core.route('/Minnesota/donate')
 def MN_donate():
-    return render_template('MN_donate.html', title="Minnesota", states=states_array, donation_page=("Donation Pages MN", "core.MN_donate"), state_orgs=("Organizations MN", "core.MN_org"), state_black_businesses=("Black Businesses MN", "core.MN_biz"))
+    return render_template('state_donate.html', title="Minnesota", states=states_array, donation_page=("Donation Pages MN", "core.MN_donate"), state_orgs=("Organizations MN", "core.MN_org"), state_black_businesses=("Black Businesses MN", "core.MN_biz"))
 
 
 @core.route('/Minnesota/organizations')
 def MN_org():
-    return render_template('MN_org.html', title="Minnesota", states=states_array, donation_page=("Donation Pages MN", "core.MN_donate"), state_orgs=("Organizations MN", "core.MN_org"), state_black_businesses=("Black Businesses MN", "core.MN_biz"))
+    return render_template('state_org.html', title="Minnesota", states=states_array, donation_page=("Donation Pages MN", "core.MN_donate"), state_orgs=("Organizations MN", "core.MN_org"), state_black_businesses=("Black Businesses MN", "core.MN_biz"))
 
 
 @core.route('/Minnesota/BlackBusiness')
 def MN_biz():
-    return render_template('MNbiz.html', title="Minnesota", states=states_array, donation_page=("Donation Pages MN", "core.MN_donate"), state_orgs=("Organizations MN", "core.MN_org"), state_black_businesses=("Black Businesses MN", "core.MN_biz"))
+    return render_template('state_biz.html', title="Minnesota", states=states_array, donation_page=("Donation Pages MN", "core.MN_donate"), state_orgs=("Organizations MN", "core.MN_org"), state_black_businesses=("Black Businesses MN", "core.MN_biz"))
