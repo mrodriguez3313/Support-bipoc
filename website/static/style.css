@@ -29,11 +29,30 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: #000000;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: "QanelasBold", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #FFFFFF;
+}
+
+.body_two {
+   font-size: 18px;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.navbar {
+    background-color: #FFFF00;
 }
 
 .main {
   text-align: center;
-  width: 90%;
+  width: 100%;
   opacity: 0;
   display: none;
   transition: opacity 2s ease-in;
@@ -71,6 +90,7 @@ html {
   overflow: hidden;
   padding-top: 1rem;
   padding-bottom: 20px;
+  background-color: #FFFF00;
 }
 
 /* This class is the same as 'main' from states.css */
@@ -81,7 +101,7 @@ html {
 }
 
 .background {
-  background-image: linear-gradient(135deg, #e9ecef 0%, #e9ecef 100%);
+  background-color: #000000;
 }
 
 /* CUSTOMIZE THE CAROUSEL

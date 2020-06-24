@@ -1,9 +1,21 @@
 @font-face {font-family: Cornerstone; src: url('Cornerstone.ttf');}
 
+@font-face {
+  font-family: QanelasBold;
+  src: url('QanelasSoftDEMO-ExtraBold.otf')
+}
+
 .loader {
     font-family: 'Cornerstone';
     font-size: 40px;
-    color: black;
+    color: white;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .loader::after{
