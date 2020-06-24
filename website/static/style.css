@@ -23,6 +23,14 @@ html {
   position: relative;
 }
 
+a {
+  color: #000000 !important;
+}
+
+a:hover {
+  color: #B46E43 !important;
+}
+
 .body {
   font-family: 'Cornerstone', sans-serif;
   font-size: 18px;
@@ -97,7 +105,7 @@ h1 {
 .body-fix {
   position: relative;
   min-height: 110vh;
-  padding-bottom: 18rem;
+  padding-bottom: 14rem;
 }
 
 .background {
