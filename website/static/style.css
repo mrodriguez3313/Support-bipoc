@@ -33,21 +33,28 @@ html {
 }
 
 h1 {
+<<<<<<< HEAD
     font-size: 80px;
     font-family: "QanelasBold", sans-serif;
     color: transparent;
     -webkit-text-stroke: 1px #FFFF00;
+=======
+  font-size: 80px;
+  font-family: "QanelasBold", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px #FFFFFF;
+>>>>>>> d1b6fc589d9e1593c529b87f76853830a50be0ec
 }
 
 .body_two {
-   font-size: 18px;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .navbar {
-    background-color: #FFFF00;
+  background-color: #fcc313;
 }
 
 .main {
@@ -90,7 +97,7 @@ h1 {
   overflow: hidden;
   padding-top: 1rem;
   padding-bottom: 20px;
-  background-color: #FFFF00;
+  background-color: #fcc313;
 }
 
 /* This class is the same as 'main' from states.css */
@@ -107,6 +114,10 @@ h1 {
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
+#myCarousel {
+  border: 1px solid grey;
+}
+
 .carousel {
   margin-bottom: 4rem;
 }
@@ -120,7 +131,7 @@ h1 {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
-  background-color: #777;
+  background-color: #black;
 }
 
 .carousel-item>img {
