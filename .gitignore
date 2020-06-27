@@ -2,9 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
-website/__pycache__/
-website/core/__pycache__/
-website/error_pages/__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*/*/__pycache__/
 
 # C extensions
 *.so
