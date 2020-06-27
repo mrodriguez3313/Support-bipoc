@@ -5,13 +5,18 @@ states_array = sorted(states_a)
 
 
 National_orgs_array = []
-Other_Resources = [("pb-resources.com", "http://www.pb-resources.com"), ("HungryHungryHooker.com",
-                                                                         "https://hungryhungryhooker.squarespace.com/blackownedbiz"), ("Adhesive Unity.com", "https://adhesiveunity.com/")]
+Other_Resources = [("pbresources.com", "http://www.pb-resources.com"), ("HungryHungryHooker.com",
+                                                                        "https://hungryhungryhooker.squarespace.com/blackownedbiz"), ("Adhesive Unity.com", "https://adhesiveunity.com/")]
 
 
 @core.route('/')
 def index():
     return render_template("index.html", states=states_array, other=Other_Resources)
+
+
+@core.route('/StatesList')
+def state_list():
+    return render_template('states_list.html', title="Slacktivist-List of States", states=states_array, other=Other_Resources)
 
 
 @core.route('/NationalDonate')
