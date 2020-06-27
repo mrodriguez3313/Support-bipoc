@@ -51,6 +51,9 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 400px;
+  margin-bottom: 200px;
+  clear: both;
 }
 
 .navbar {
@@ -70,7 +73,7 @@ h1 {
 }
 
 .main p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .button {
