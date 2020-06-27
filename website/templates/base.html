@@ -15,7 +15,7 @@
   <title>Slacktivist.io</title>
 </head>
 
-<body class="background body-fix">
+<body class="body-fix">
   <!--Addition that needs to be looked at-->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light barstyle">
@@ -65,7 +65,7 @@
       <div class="row">
         {% for item in other %}
         <div class="col-sm m-2">
-          <a class="text-muted" href="{{item[1]}}">{{item[0]}}</a>
+          <a href="{{item[1]}}">{{item[0]}}</a>
         </div>
         {% endfor %}
       </div>

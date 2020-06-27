@@ -13,6 +13,7 @@
   src: url('QanelasSoftDEMO-ExtraBold.otf')
 }
 
+/* Global tag styling */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,15 +32,6 @@ a:hover {
   color: #B46E43 !important;
 }
 
-.body {
-  font-family: 'Cornerstone', sans-serif;
-  font-size: 18px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #000000;
-}
-
 h1 {
   font-size: 80px;
   font-family: "QanelasBold", sans-serif;
@@ -47,15 +39,37 @@ h1 {
   -webkit-text-stroke: 1px #FFFFFF;
 }
 
-.body_two {
-  font-size: 18px;
+body {
+  /* font-family: 'Cornerstone', sans-serif; */
+  font-size: 25px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: #000000;
 }
 
-.navbar {
+/* This is applied to both navbar and footer */
+.barstyle {
+  font-size: 18px;
+  font-family: 'QanelasSoft', Cornerstone;
   background-color: #fcc313;
+}
+
+/* Footer styling */
+.foot-position {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 20px;
+}
+
+/* This class is the same as 'main' from states.css used to help footer stay at the bottom of page. */
+.body-fix {
+  position: relative;
+  min-height: 110vh;
+  padding-bottom: 14rem;
 }
 
 .main {
@@ -66,17 +80,17 @@ h1 {
   transition: opacity 2s ease-in;
 }
 
-.main h1 {
+.main.h1 {
   font-size: 50px;
 }
 
-.main p {
+.title-text {
+  color: white;
   font-size: 25px;
+  line-height: 1.6;
 }
 
-.button {
-  background-color: #000000;
-  color: white;
+.btn {
   display: inline-block;
   font-size: 20px;
   text-decoration: none;
@@ -86,72 +100,59 @@ h1 {
   border: 2px solid #1c100b;
 }
 
-.barstyle {
-  font-family: 'QanelasSoft', Cornerstone;
-  color: #000000;
-}
-
-.foot-position {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 1rem;
-  padding-bottom: 20px;
-  background-color: #fcc313;
-}
-
-/* This class is the same as 'main' from states.css */
-.body-fix {
-  position: relative;
-  min-height: 110vh;
-  padding-bottom: 14rem;
-}
-
-.background {
-  background-color: #000000;
-}
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
 #myCarousel {
   border: 1px solid grey;
-}
-
-.carousel {
   margin-bottom: 4rem;
+  /* border-left: none;
+  border-right: none; */
 }
 
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
-  background-color: #black;
+  height: 448px;
+  overflow: auto;
+  background-color: grey;
+  padding: 5% 15%;
 }
 
-.carousel-item>img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+@media (min-width: 300px) and (max-width: 700px) {
+  .carousel-item {
+    height: 35rem;
+    overflow: auto;
+  }
+}
+
+.mobilecv {
+  padding: 0;
+}
+
+.carousel-caption {
+  /* bottom: 3rem; */
+  padding-bottom: 0;
+}
+
+.carousel-header {
+  text-align: left;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.carousel-text {
+  color: white;
+  /* font-size: 25px; */
+  margin-bottom: 2rem;
+}
+
+.carousel-button {
+  margin: 0;
 }
 
 /* -------------------------- */
 /* National Orgs styling */
-.jumboimg {
-  background-image: url("/static/images/monochrome-photo-of-resist-signage-3141240.jpg");
-  background-size: 100% 100%;
-  background-attachment: scroll;
-}
-
-@media (max-width: 500px) {
+@media (min-width: 550px) {
   .mobilev {
     padding: 0 0;
   }
@@ -174,6 +175,12 @@ div.a {
   border: 1px solid grey;
 }
 
+.jumboimg {
+  background-image: url("/static/images/monochrome-photo-of-resist-signage-3141240.jpg");
+  background-size: 100% 100%;
+  background-attachment: scroll;
+}
+
 .jumbodonateimg {
   background-image: url("/static/images/kat-yukawa-K0E6E0a0R3A-unsplash.jpg");
   background-size: 100% 100%;
@@ -184,4 +191,16 @@ div.a {
   background-image: url("/static/images/clay-banks-gr0wnD7PbJk-unsplash.jpg");
   background-size: 100% 100%;
   background-attachment: scroll;
+}
+
+/* States List styling */
+.states_style {
+  color: white !important;
+  background-color: black;
+  border-radius: .1;
+  border: 1px solid grey;
+}
+
+.states_style:hover {
+  background-color: #e9ecef;
 }
