@@ -13,6 +13,7 @@
   src: url('QanelasSoftDEMO-ExtraBold.otf')
 }
 
+/* Used to help keep footer at the bottom of the page */
 html {
   position: relative;
 }
@@ -25,19 +26,33 @@ a:hover {
   color: #B46E43 !important;
 }
 
-.blmstyle {
-  font-family: 'Cornerstone', sans-serif;
-  color: #000000;
+body {
+  /* font-family: 'Cornerstone', sans-serif; */
+  font-size: 20px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  background: #000000;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 23.5rem;
 }
 
+/* This is applied to both navbar and footer */
 .barstyle {
+  font-size: 18px;
   font-family: 'QanelasSoft', Cornerstone;
-  color: #000000;
+  background-color: #fcc313;
 }
 
 .title_blm {
   font-family: 'QanelasBold', sans-serif;
   color: #000000;
+}
+
+.state-header {
+  font-size: 4.5rem;
+  color: white;
 }
 
 .foot-position {
@@ -49,24 +64,19 @@ a:hover {
   padding-bottom: 20px;
 }
 
-.state-header {
-  font-size: 4.5rem;
-}
-
-.main {
-  position: relative;
-  min-height: 100vh;
-  padding-bottom: 23.5rem;
-}
-
-.background {
-  background-image: linear-gradient(135deg, #e9ecef 0%, #e9ecef 100%);
-}
-
 .cardimg {
   height: 288px;
 }
 
+.card-title {
+  font-size: 25px;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+/*
 .cardstyle {
   position: relative;
   height: 308px;
@@ -75,4 +85,4 @@ a:hover {
 .cardlink {
   position: absolute;
   bottom: 1.25rem;
-}
+} */
