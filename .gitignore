@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+website/__pycache__/
+website/core/__pycache__/
+website/error_pages/__pycache__/
 
 # C extensions
 *.so
@@ -103,5 +106,5 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# vscode 
+# vscode
 .vscode/
