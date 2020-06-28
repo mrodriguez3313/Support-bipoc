@@ -5,8 +5,8 @@ states_array = sorted(states_a)
 
 
 National_orgs_array = []
-Other_Resources = [("pb-resources.com", "http://www.pb-resources.com"), ("HungryHungryHooker.com",
-                                                                         "https://hungryhungryhooker.squarespace.com/blackownedbiz"), ("Adhesive Unity.com", "https://adhesiveunity.com/")]
+Other_Resources = [("pbresources.com", "http://www.pb-resources.com"), ("HungryHungryHooker.com",
+                                                                        "https://hungryhungryhooker.squarespace.com/blackownedbiz"), ("Adhesive Unity.com", "https://adhesiveunity.com/")]
 
 
 @core.route('/')
