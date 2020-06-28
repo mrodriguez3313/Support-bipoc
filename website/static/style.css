@@ -107,7 +107,7 @@ h1 {
 .body-fix {
   position: relative;
   min-height: 110vh;
-  padding-bottom: 14rem;
+  padding-bottom: 10rem;
 }
 
 .background {
@@ -127,14 +127,26 @@ h1 {
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+  padding: 0;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  /* bottom: 4.5rem; */
+  /* z-index: 10; */
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    top: 40%;
+  }
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
+  position: relative;
   height: 32rem;
-  background-color: #black;
+  background-color: black;
 }
 
 .carousel-item>img {
@@ -143,6 +155,14 @@ h1 {
   left: 0;
   min-width: 100%;
   height: 32rem;
+}
+
+.carousel-header {
+  margin-bottom: 2rem;
+}
+
+.carousel-text {
+  margin-bottom: 2rem;
 }
 
 /* -------------------------- */
