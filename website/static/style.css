@@ -37,11 +37,40 @@ a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: #000000;
+}
+
+h1 {
+<<<<<<< HEAD
+    font-size: 80px;
+    font-family: "QanelasBold", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #FFFF00;
+=======
+  font-size: 80px;
+  font-family: "QanelasBold", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px #FFFFFF;
+>>>>>>> d1b6fc589d9e1593c529b87f76853830a50be0ec
+}
+
+.body_two {
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 400px;
+  margin-bottom: 200px;
+  clear: both;
+}
+
+.navbar {
+  background-color: #fcc313;
 }
 
 .main {
   text-align: center;
-  width: 90%;
+  width: 100%;
   opacity: 0;
   display: none;
   transition: opacity 2s ease-in;
@@ -52,7 +81,7 @@ a:hover {
 }
 
 .main p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .button {
@@ -79,6 +108,7 @@ a:hover {
   overflow: hidden;
   padding-top: 1rem;
   padding-bottom: 20px;
+  background-color: #fcc313;
 }
 
 /* This class is the same as 'main' from states.css */
@@ -89,12 +119,16 @@ a:hover {
 }
 
 .background {
-  background-image: linear-gradient(135deg, #e9ecef 0%, #e9ecef 100%);
+  background-color: #000000;
 }
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
+#myCarousel {
+  border: 1px solid grey;
+}
+
 .carousel {
   margin-bottom: 4rem;
 }
@@ -108,7 +142,7 @@ a:hover {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
-  background-color: #777;
+  background-color: #black;
 }
 
 .carousel-item>img {
