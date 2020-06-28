@@ -41,17 +41,10 @@ a:hover {
 }
 
 h1 {
-<<<<<<< HEAD
-    font-size: 80px;
-    font-family: "QanelasBold", sans-serif;
-    color: transparent;
-    -webkit-text-stroke: 1px #FFFF00;
-=======
   font-size: 80px;
   font-family: "QanelasBold", sans-serif;
   color: transparent;
   -webkit-text-stroke: 1px #FFFFFF;
->>>>>>> d1b6fc589d9e1593c529b87f76853830a50be0ec
 }
 
 .body_two {

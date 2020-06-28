@@ -25,14 +25,9 @@ a:hover {
   color: #B46E43 !important;
 }
 
-.blmstyle {
-  font-family: 'Cornerstone', sans-serif;
-  color: #000000;
-}
-
 .barstyle {
   font-family: 'QanelasSoft', Cornerstone;
-  color: #000000;
+  background-color: #fcc313;
 }
 
 .title_blm {
@@ -41,6 +36,7 @@ a:hover {
 }
 
 .foot-position {
+  background-color: #fcc313;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -60,7 +56,7 @@ a:hover {
 }
 
 .background {
-  background-image: linear-gradient(135deg, #e9ecef 0%, #e9ecef 100%);
+  background-color: black;
 }
 
 .cardimg {
