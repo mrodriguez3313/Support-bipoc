@@ -34,10 +34,12 @@ a:hover {
 }
 
 h1 {
-  font-size: 80px;
-  font-family: "QanelasBold", sans-serif;
-  color: transparent;
-  -webkit-text-stroke: 1px #FFFFFF;
+
+    font-size: 80px;
+    font-family: "QanelasBold", sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #FFFF00;
+
 }
 
 body {
@@ -47,6 +49,10 @@ body {
   justify-content: center;
   flex-direction: column;
   background: #000000;
+  min-height: 400px;
+  margin-bottom: 200px;
+  clear: both;
+
 }
 
 /* This is applied to both navbar and footer */
@@ -85,10 +91,15 @@ body {
   font-size: 50px;
 }
 
+
 .title-text {
   color: white;
   font-size: 25px;
   line-height: 1.6;
+
+.main p {
+  font-size: 20px;
+
 }
 
 .btn {

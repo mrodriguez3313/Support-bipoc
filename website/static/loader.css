@@ -9,18 +9,22 @@
     font-family: 'Cornerstone';
     font-size: 40px;
     color: white;
-    height: 75%;
+    height: 60%;
     width: 100%;
-    display: flex;
-    position: fixed;
+    z-index: 100;
+    display: inline-flex;
+    position: absolute;
     align-items: center;
     justify-content: center;
+    min-height: 400px;
+    margin-bottom: 200px;
+    clear: both;
 
 }
 
 .loader::after{
     content: '\2026';
-    display: inline-block;
+    display: grid;
     overflow: hidden;
     vertical-align: bottom;
     animation: dots steps(4, end) 2s infinite;
