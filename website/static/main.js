@@ -1,6 +1,12 @@
 const loader = document.querySelector('.loader');
 const main = document.querySelector('.main');
 
+$('#myCarousel').hover(function () {
+  $(this).carousel('pause')
+}, function () {
+  $(this).carousel('cycle')
+})
+
 function init() {
     setTimeout(() => {
         loader.style.opacity = 0;
