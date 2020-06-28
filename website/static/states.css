@@ -31,8 +31,10 @@ a:hover {
 }
 
 .title_blm {
+  font-size: 4rem;
   font-family: 'QanelasBold', sans-serif;
-  color: #000000;
+  color: transparent;
+  -webkit-text-stroke: 1px #FFFFFF;
 }
 
 .foot-position {
@@ -47,6 +49,8 @@ a:hover {
 
 .state-header {
   font-size: 4.5rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #FFFFFF;
 }
 
 .main {
