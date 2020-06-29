@@ -4,10 +4,10 @@
   <h1 class="font-weight title_blm">State List</h1>
 </div>
 <div class="container">
-  {% for state in states %}
+  {% for code, state in states %}
   <ul class="list-group">
     <li>
-      <a href="/{{state}}" class="list-group-item list-group-item-action align-items-start bg-light space rounded li-elem">
+      <a href="/state/{{code}}" class="list-group-item list-group-item-action align-items-start bg-light space rounded li-elem">
         <h5 class="mb-1">{{state}}</h5>
       </a>
       <br>

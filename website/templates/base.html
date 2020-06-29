@@ -42,8 +42,8 @@
               States
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              {% for state in states %}
-              <a class="dropdown-item" href="/{{state}}">{{ state }}</a>
+              {% for c, s in states %}
+              <a class="dropdown-item" href="{{ url_for('core.state', state_code=c) }}">{{ s }}</a>
               {% endfor %}
             </div>
           </li>
