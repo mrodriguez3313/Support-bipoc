@@ -14,6 +14,11 @@ def index():
     return render_template("index.html", states=states_array, other=Other_Resources)
 
 
+@core.route('/Stateslist')
+def State_list():
+    return render_template('States_list.html', states=states_array, other=Other_Resources)
+
+
 @core.route('/NationalDonate')
 def donate():
     return render_template('donate.html', title="Donate Nationwide", states=states_array, other=Other_Resources)
