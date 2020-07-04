@@ -1,28 +1,6 @@
 {% extends "base_state.html" %}
 {% block content %}
 <div class="jumbotron d-flex justify-content-center bg-transparent">
-  <h1 class="font-weight title_blm">Black Businesses to Support in {{title}}</h1>
+  <h1 class="font-weight title_blm">Black Businesses to support in {{title}}</h1>
 </div>
-
-<div class="container">
-  <h3 class="resource"><a style="color: white !important;" href="https://docs.google.com/forms/d/e/1FAIpQLSejKUgeq_edAGw43KlcmZQPX9w-jQ4WP_h33IXg-YthxidIPw/viewform?usp=sf_link">Submit a Resource or Feedback</a></h3>
-
-  <ul class="list-group">
-    {% for name, contact, url, desc in data %}
-    <li>
-      <a href="{{ url }}" class="list-group-item list-group-item-action align-items-start space">
-        <div class="d-flex w-100 justify-content-between">
-          <h5 class="mb-1">{{ name }}</h5>
-        </div>
-        <p class="mb-1"> {{ desc }} </p>
-        <p class="mb-1"> Contact: {{ contact }} </p>
-      </a>
-      <br>
-      {% endfor %}
-      <br>
-    </li>
-  </ul>
-</div>
-
-
 {% endblock %}
