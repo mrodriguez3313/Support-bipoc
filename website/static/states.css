@@ -25,27 +25,16 @@ a:hover {
   color: #B46E43 !important;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .barstyle {
   font-family: 'QanelasSoft', Cornerstone;
   background-color: #fcc313;
 }
 
 .title_blm {
-  display: block;
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-family: 'QanelasBold', sans-serif;
   color: transparent;
   -webkit-text-stroke: 1px #FFFFFF;
-}
-
-.resource {
-  margin: 2rem;
-  text-decoration: underline;
-  text-decoration-color: white;
 }
 
 .foot-position {
