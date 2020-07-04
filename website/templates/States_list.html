@@ -2,12 +2,14 @@
 {% block content %}
 <div class="jumbotron d-flex justify-content-center bg-transparent">
   <h1 class="font-weight title_blm">State List</h1>
+  <h3 class="resource"><a style="color: white !important;" href="https://docs.google.com/forms/d/e/1FAIpQLSejKUgeq_edAGw43KlcmZQPX9w-jQ4WP_h33IXg-YthxidIPw/viewform?usp=sf_link">Submit a Resource or Feedback</a></h3>
+
 </div>
 <div class="container">
-  {% for state in states %}
+  {% for code, state in states %}
   <ul class="list-group">
     <li>
-      <a href="/{{state}}" class="list-group-item list-group-item-action align-items-start bg-light space rounded li-elem">
+      <a href="/state/{{code}}" class="list-group-item list-group-item-action align-items-start bg-light space rounded li-elem">
         <h5 class="mb-1">{{state}}</h5>
       </a>
       <br>

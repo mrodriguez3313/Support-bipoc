@@ -31,19 +31,18 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">States</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <!-- <a class="dropdown-item" href="{{url_for('core.Texas')}}">Texas</a> -->
-              {% for state in states %}
-              <a class="dropdown-item" href="/{{state}}">{{ state }}</a>
+              {% for c, s in states %}
+              <a class="dropdown-item" href="{{ url_for('core.state', state_code=c) }}">{{ s }}</a>
               {% endfor %}
           </li>
           <li class='nav-link'>
-            <a href="{{url_for(donation_page[1])}}">{{donation_page[0]}}</a>
+            <a href="{{ url_for('core.state_donate', state_code=code) }}">Donations for {{ title }}</a>
           </li>
           <li class='nav-link'>
-            <a href="{{url_for(state_orgs[1])}}">{{state_orgs[0]}}</a>
+            <a href="{{ url_for('core.state_org', state_code=code) }}">Organizations for {{ title }}</a>
           </li>
           <li class='nav-link'>
-            <a href="{{url_for(state_black_businesses[1])}}">{{state_black_businesses[0]}}</a>
+            <a href="{{ url_for('core.state_biz', state_code=code) }}">Businesses for {{ title }}</a>
           </li>
 
         </ul>
