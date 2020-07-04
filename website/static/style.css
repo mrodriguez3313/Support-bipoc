@@ -114,6 +114,12 @@ h1 {
   background-color: #000000;
 }
 
+.resource {
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
