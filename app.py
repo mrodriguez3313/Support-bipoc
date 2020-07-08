@@ -6,5 +6,5 @@ freezer = Freezer(app)
 app.config.from_pyfile('settings.py')
 
 if __name__ == '__main__':
-    freezer.freeze()
+    freezer.run(debug=True)
     # app.run(debug=True)

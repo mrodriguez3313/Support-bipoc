@@ -7,6 +7,7 @@ DATA_FILE = 'website/static/site_data.tsv'
 states_dict, state_to_category = load_data(DATA_FILE)
 states_array = list(states_dict.items())
 core = Blueprint('core', __name__)
+error_pages = Blueprint('error_pages', __name__)
 
 
 National_orgs_array = []
@@ -77,3 +78,7 @@ def state_biz(state_code=None):
 @core.route('/State_list')
 def State_list():
     return render_template("index.html", states=states_array, other=Other_Resources)
+
+@error_pages.app_errorhandler(404)
+def error_404(error):
+    return render_template('error_pages/404.html', states=states_array), 404

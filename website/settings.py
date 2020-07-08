@@ -7,14 +7,14 @@ DEBUG = True
 # Assumes the app is located in the same directory
 # where this file resides
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
-
+# print(APP_DIR)
 
 def parent_dir(path):
     '''Return the parent of a directory.'''
     return os.path.abspath(os.path.join(path, os.pardir))
 
 PROJECT_ROOT = parent_dir(APP_DIR)
-print(PROJECT_ROOT)
+# print(PROJECT_ROOT)
 # In order to deploy to Github pages, you must build the static files to
 # the project root
 FREEZER_DESTINATION = PROJECT_ROOT
