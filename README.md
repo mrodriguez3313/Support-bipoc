@@ -1,4 +1,4 @@
-# SiteProject
+# Support-BIPOC
 
 We aim to give you the tools to bring about real change in this world. This website is powered by the efforts of a community of social media activists coming together to source official and reliable links to ways you can help all minorities and genders with a focus on Black, African-American, and Latino lives.
 
