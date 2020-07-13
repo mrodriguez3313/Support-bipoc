@@ -25,6 +25,10 @@ a:hover {
   color: #B46E43 !important;
 }
 
+h1 {
+  letter-spacing: 3px;
+}
+
 ul {
   list-style-type: none;
 }

@@ -45,6 +45,7 @@ h1 {
   font-family: "QanelasBold", sans-serif;
   color: transparent;
   -webkit-text-stroke: 1px #FFFFFF;
+  letter-spacing: 1px;
 }
 
 .body_two {
@@ -114,8 +115,15 @@ h1 {
   background-color: #000000;
 }
 
+.index-paragraph {
+  color: #FFFFFF;
+  line-height: 1.6;
+  letter-spacing: .076em;
+}
+
 .resource {
-  margin-bottom: 2rem;
+  width: 100%;
+  margin: 1rem auto;
   text-decoration: underline;
   text-decoration-color: white;
 }

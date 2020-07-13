@@ -9,7 +9,7 @@ states_array = list(states_dict.items())
 core = Blueprint('core', __name__)
 
 
-National_orgs_array = []
+
 Other_Resources = [("pbresources.com", "http://www.pb-resources.com"), ("HungryHungryHooker.com",
                                                                         "https://hungryhungryhooker.squarespace.com/blackownedbiz"), ("Adhesive Unity.com", "https://adhesiveunity.com/")]
 
@@ -32,11 +32,6 @@ def organize():
 @core.route('/NationalPetitions')
 def petitions():
     return render_template('petitions.html', title="National Petitions", states=states_array, other=Other_Resources)
-
-
-@core.route('/CampaignZero')
-def zero():
-    return render_template('campaign.html')
 
 
 @core.route('/state/<state_code>')
@@ -76,4 +71,4 @@ def state_biz(state_code=None):
 
 @core.route('/State_list')
 def State_list():
-    return render_template("index.html", states=states_array, other=Other_Resources)
+    return render_template("States_list.html", states=states_array, other=Other_Resources)
