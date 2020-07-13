@@ -26,7 +26,7 @@ def donate():
 
 @core.route('/NationalOrganizations')
 def organize():
-    return render_template('organize.html', title="National Organizations", states=states_array, orgs=National_orgs_array, other=Other_Resources)
+    return render_template('organize.html', title="National Organizations", states=states_array, other=Other_Resources)
 
 
 @core.route('/NationalPetitions')

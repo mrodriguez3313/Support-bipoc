@@ -48,6 +48,13 @@ h1 {
   letter-spacing: 1px;
 }
 
+.title_blm {
+  font-size: 4.5rem;
+  font-family: 'QanelasBold', sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px #FFFFFF;
+}
+
 .body_two {
   font-size: 18px;
   align-items: center;

@@ -27,15 +27,14 @@
   <div class="container">
     <!-- <small class="asterisktext">Descriptions are paraphrased from their official websites.</small> -->
     <ul class="list-group">
-      {% for org in orgs %}
+      {% for name, contact, url, desc in data %}
       <li>
-        <a href="{{org[1]}}" class="list-group-item list-group-item-action align-items-start space">
+        <a href="{{ url }}" class="list-group-item list-group-item-action align-items-start space">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">{{org[0]}}</h5>
+            <h5 class="mb-1">{{ name }}</h5>
           </div>
-          <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <!--{{org[2]}}-->
-          </p>
+          <p class="mb-1"> {{ desc }} </p>
+          <p class="mb-1"> Contact: {{ contact }} </p>
         </a>
         <br>
         {% endfor %}
