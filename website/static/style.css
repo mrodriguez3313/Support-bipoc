@@ -48,6 +48,11 @@ h1 {
   letter-spacing: 1px;
 }
 
+.barstyle {
+  font-family: 'QanelasSoft', Cornerstone;
+  color: #000000;
+}
+
 .title_blm {
   font-size: 4.5rem;
   font-family: 'QanelasBold', sans-serif;
@@ -96,11 +101,6 @@ h1 {
   border: 2px solid #1c100b;
 }
 
-.barstyle {
-  font-family: 'QanelasSoft', Cornerstone;
-  color: #000000;
-}
-
 .foot-position {
   position: absolute;
   bottom: 0;
@@ -146,8 +146,6 @@ h1 {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  /* bottom: 4.5rem; */
-  /* z-index: 10; */
 }
 
 @media (max-width: 600px) {

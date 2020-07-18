@@ -33,8 +33,18 @@ ul {
   list-style-type: none;
 }
 
+/*
+.navbar {
+  background-color: #fcc313;
+} */
+.navbar-toggler-icon {
+  position: relative;
+  z-index: 1;
+}
+
 .barstyle {
   font-family: 'QanelasSoft', Cornerstone;
+  color: black;
   background-color: #fcc313;
 }
 
