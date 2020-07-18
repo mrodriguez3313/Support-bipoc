@@ -73,7 +73,7 @@ def is_url(url):
 
 def load_data(path):
     # TODO replace with call to google sheets api directly
-    # COLS: ['Type', 'Name', 'Contact', 'Url', 'Description', 'national', 'state']
+    # COLS: ['Type', 'Name', 'Contact', 'Url', 'Description', 'National', 'State', 'City']
     with open(path) as f:
         reader = csv.DictReader(f, dialect='excel')
         rows = list(reader)
@@ -94,6 +94,6 @@ def load_data(path):
             data[entry_type] = {}
         if state not in data[entry_type]:
             data[entry_type][state] = []
-        # name, contact, url, desc
-        data[entry_type][state].append((row['Name'], row['Contact'], row['Url'], row['Description']))
+        # name, contact, url, desc, city
+        data[entry_type][state].append((row['Name'], row['Contact'], row['Url'], row['Description'], row['City']))
     return states_a, data
