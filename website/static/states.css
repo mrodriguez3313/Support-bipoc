@@ -46,12 +46,6 @@ ul {
   -webkit-text-stroke: 1px #FFFFFF;
 }
 
-.resource {
-  margin: 2rem;
-  text-decoration: underline;
-  text-decoration-color: white;
-}
-
 .foot-position {
   background-color: #fcc313;
   position: absolute;
