@@ -1,9 +1,8 @@
 from flask import render_template, Blueprint, url_for
-
 from .utils import load_data
 
 
-DATA_FILE = 'website/static/site_data.tsv'
+DATA_FILE = 'website/static/csv_data.csv'
 states_dict, state_to_category = load_data(DATA_FILE)
 states_array = list(states_dict.items())
 core = Blueprint('core', __name__)

@@ -1,8 +1,8 @@
 import csv
 
 
-STATE_COL = 'state'
-EXCLUDED_CODES = ['yes', 'no', '']
+STATE_COL = 'State'
+EXCLUDED_CODES = ['yes', 'no','n/a' ,'']
 
 # https://gist.github.com/rogerallen/1583593
 STATE_TO_ABBREV = {
@@ -75,7 +75,7 @@ def load_data(path):
     # TODO replace with call to google sheets api directly
     # COLS: ['Type', 'Name', 'Contact', 'Url', 'Description', 'national', 'state']
     with open(path) as f:
-        reader = csv.DictReader(f, dialect='excel-tab')
+        reader = csv.DictReader(f, dialect='excel')
         rows = list(reader)
         cols = reader.fieldnames
         assert STATE_COL in cols
@@ -89,7 +89,7 @@ def load_data(path):
     data = {}
     for row in rows:
         entry_type = row['Type']
-        state = row['state']
+        state = row['State']
         if entry_type not in data:
             data[entry_type] = {}
         if state not in data[entry_type]:
