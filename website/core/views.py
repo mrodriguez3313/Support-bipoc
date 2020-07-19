@@ -6,11 +6,9 @@ DATA_FILE = 'website/static/csv_data.csv'
 states_dict, state_to_category = load_data(DATA_FILE)
 states_array = list(states_dict.items())
 core = Blueprint('core', __name__)
-
-
-
 Other_Resources = [("pbresources.com", "http://www.pb-resources.com"), ("HungryHungryHooker.com",
                                                                         "https://hungryhungryhooker.squarespace.com/blackownedbiz"), ("Adhesive Unity.com", "https://adhesiveunity.com/")]
+
 
 
 @core.route('/')
@@ -67,7 +65,6 @@ def state_biz(state_code=None):
     except KeyError:
         data = []
     return render_template('state_biz.html', title=title, states=states_array, data=data, code=state_code, other=Other_Resources)
-
 @core.route('/State_list')
 def State_list():
     return render_template("States_list.html", states=states_array, other=Other_Resources)
