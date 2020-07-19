@@ -103,5 +103,9 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# vscode 
+# vscode
 .vscode/
+
+#Custom Files
+client_secret.json
+spreadsheet.py

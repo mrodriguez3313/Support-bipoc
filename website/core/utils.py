@@ -1,8 +1,8 @@
 import csv
 
 
-STATE_COL = 'state'
-EXCLUDED_CODES = ['yes', 'no', '']
+STATE_COL = 'State'
+EXCLUDED_CODES = ['yes', 'no','n/a' ,'']
 
 # https://gist.github.com/rogerallen/1583593
 STATE_TO_ABBREV = {
@@ -73,9 +73,9 @@ def is_url(url):
 
 def load_data(path):
     # TODO replace with call to google sheets api directly
-    # COLS: ['Type', 'Name', 'Contact', 'Url', 'Description', 'national', 'state']
+    # COLS: ['Type', 'Name', 'Contact', 'Url', 'Description', 'National', 'State', 'City']
     with open(path) as f:
-        reader = csv.DictReader(f, dialect='excel-tab')
+        reader = csv.DictReader(f, dialect='excel')
         rows = list(reader)
         cols = reader.fieldnames
         assert STATE_COL in cols
@@ -89,11 +89,11 @@ def load_data(path):
     data = {}
     for row in rows:
         entry_type = row['Type']
-        state = row['state']
+        state = row['State']
         if entry_type not in data:
             data[entry_type] = {}
         if state not in data[entry_type]:
             data[entry_type][state] = []
-        # name, contact, url, desc
-        data[entry_type][state].append((row['Name'], row['Contact'], row['Url'], row['Description']))
+        # name, contact, url, desc, city
+        data[entry_type][state].append((row['Name'], row['Contact'], row['Url'], row['Description'], row['City']))
     return states_a, data

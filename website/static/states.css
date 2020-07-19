@@ -33,8 +33,18 @@ ul {
   list-style-type: none;
 }
 
+/*
+.navbar {
+  background-color: #fcc313;
+} */
+.navbar-toggler-icon {
+  position: relative;
+  z-index: 1;
+}
+
 .barstyle {
   font-family: 'QanelasSoft', Cornerstone;
+  color: black;
   background-color: #fcc313;
 }
 
@@ -44,12 +54,6 @@ ul {
   font-family: 'QanelasBold', sans-serif;
   color: transparent;
   -webkit-text-stroke: 1px #FFFFFF;
-}
-
-.resource {
-  margin: 2rem;
-  text-decoration: underline;
-  text-decoration-color: white;
 }
 
 .foot-position {
