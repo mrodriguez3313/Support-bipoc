@@ -27,14 +27,14 @@
   </div>
   <div class="container">
     <ul class="list-group">
-      {% for name, contact, url, desc in data %}
+      {% for name, contact, url, desc, city in data %}
       <li>
-        <a href="{{ url }}" class="list-group-item list-group-item-action align-items-start space">
+        <a href="{{ url }}" target="_blank" class="list-group-item list-group-item-action align-items-start space">
           <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1" style="color: #d68858;">{{ name }}</h5>
+            <h5 class="mb-1">{{ name }}</h5>
           </div>
-          <p class="mb-1"> {{ desc }} </p>
-          <p class="mb-1"> Contact: {{ contact }} </p>
+          <!-- <p class="mb-1"> {{ desc }} </p>
+          <p class="mb-1"> Contact: {{ contact }} </p> -->
         </a>
         <br>
         {% endfor %}
