@@ -18,17 +18,31 @@ def index():
 
 @core.route('/NationalDonate')
 def donate():
-    return render_template('donate.html', title="Donate Nationwide", states=states_array, other=Other_Resources)
+    try:
+        data = state_to_category['Donate']['nat']
+    except KeyError:
+        data = []
+        print(data, "nat donate")
+
+    return render_template('donate.html', title="Donate Nationwide", states=states_array, data=data, other=Other_Resources)
 
 
 @core.route('/NationalOrganizations')
 def organize():
-    return render_template('organize.html', title="National Organizations", states=states_array, other=Other_Resources)
+    try:
+        data = state_to_category['Organization']['nat']
+    except KeyError:
+        data = []
+    return render_template('organize.html', title="National Organizations", states=states_array, data=data, other=Other_Resources)
 
 
 @core.route('/NationalPetitions')
 def petitions():
-    return render_template('petitions.html', title="National Petitions", states=states_array, other=Other_Resources)
+    try:
+        data = state_to_category['Petition']['nat']
+    except KeyError:
+        data = []
+    return render_template('petitions.html', title="National Petitions", states=states_array, data=data, other=Other_Resources)
 
 
 @core.route('/state/<state_code>')
